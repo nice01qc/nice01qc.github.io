@@ -1,7 +1,4 @@
 # nice01qc.github.io
-
-# Summary #
-## 平时编程基础知识总结 ##
 <ul>
 <li>
 <b>Java</b>	<ol>
