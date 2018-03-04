@@ -26,11 +26,10 @@ github_username:  nice01qc
 
 # Build settings
 markdown: kramdown
-remote_theme: chesterhow/tale
+#remote_theme: chesterhow/ta
 
 permalink:      /:year-:month-:day/:title
 paginate:       5
 
 plugins:
   - jekyll-paginate
-  - jekyll-remote-theme
