@@ -56,7 +56,7 @@ title: List
  		for (var i = 0; i < lis.length; i++) {
  			var str = getvalue(lis,i,2);
  			if (str == "") {
- 				categories.add("none");
+ 				categories.add("other");
  			}else{
  				categories.add(str);
  			} 			
@@ -76,7 +76,7 @@ title: List
  			var newlist = [];
  			for (var i = 0, j = 0; i < lis.length; i++) {
  				var str = getvalue(lis,i,2);
- 				if (str == "") str = "none"; 				
+ 				if (str == "") str = "other"; 				
  				if (cateName == str) {
  					newlist[j++] = lis[i]; 
  				}			
