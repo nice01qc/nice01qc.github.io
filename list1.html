@@ -25,10 +25,9 @@ title: List
 
     <main>
 		<ul>
-			<span>{{ site.url }}</span>
 			{% for post in site.posts %}
 			<li>
-				<span>{{ post.url }}---</span>
+				<span>{{ site.url }}{{ post.url }}---</span>
 				<span>{{ post.title }}----</span>
 				<span>{{ post.categories }}----</span>
 				<span>{{ post.date }}</span>
