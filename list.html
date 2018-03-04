@@ -9,6 +9,7 @@ title: List
   {% include head.html %}
 
   <body>
+  	
     <nav class="nav">
       <div class="nav-container">
         <a href="{{ site.baseurl }}/">
@@ -23,22 +24,64 @@ title: List
     </div>
 	</nav>
 
-    <div>
-		<ul>
-			{% for post in site.posts %}
+    <ul>
+			
 			<li>
-				<a href="{{ post.url }}">{{ post.title }}</a>
-				<a href="{{ post.url }}">{{ post.tag }} 1</a>
-				{{ post.excerpt }}
-			</li>
-			{% endfor %}
-		</ul>
-	</div>
+				<a href="https://nice01qc.github.io/2017-03-29/introducing-tale">Introducing Tale</a>
+				<a href="https://nice01qc.github.io/2017-03-29/introducing-tale"> 1</a>
+				<p>Tale is minimal <a href="https://jekyllrb.com/">Jekyll</a> theme curated for storytellers. It is designed and developed by <a href="https://github.com/chesterhow/">myself</a> for a friend who writes short stories.</p>
 
-    <div style="position:absolute;bottom:1%;width:100%;">
+
+			</li>
+			
+			<li>
+				<a href="https://nice01qc.github.io/2017-03-16/example-content">Example Content</a>
+				<a href="https://nice01qc.github.io/2017-03-16/example-content"> 1</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.</p>
+
+
+			</li>
+			
+			<li>
+				<a href="https://nice01qc.github.io/2017-03-10/welcome-to-jekyll">Welcome to Jekyll!</a>
+				<a href="https://nice01qc.github.io/2017-03-10/welcome-to-jekyll"> 1</a>
+				<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+			</li>
+			
+			<li>
+				<a href="https://nice01qc.github.io/2017-03-07/the-case-of-the-missing-post">The Case of the Missing Post</a>
+				<a href="https://nice01qc.github.io/2017-03-07/the-case-of-the-missing-post"> 1</a>
+				<p>Kitty power! and sometimes switches in french and say “miaou” just because well why not man running from cops stops to pet cats, goes to jail, yet licks your face or drink water out of the faucet so jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water yet drink water out of the faucet. Pelt around the house and up and down stairs chasing phantoms.</p>
+
+
+			</li>
+			
+			<li>
+				<a href="https://nice01qc.github.io/2017-03-06/the-mystery-of-the-filler-post">The Mystery of the Filler Post</a>
+				<a href="https://nice01qc.github.io/2017-03-06/the-mystery-of-the-filler-post"> 1</a>
+				<p>Hornswaggle measured fer yer chains chase run a shot across the bow Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in the hole keel rum Barbary Coast bilge water crimp interloper square-rigged Letter of Marque. Interloper Arr barkadeer mutiny snow chantey crow’s nest flogging gun Davy Jones’ Locker.</p>
+
+
+			</li>
+			
+			<li>
+				<a href="https://nice01qc.github.io/2017-03-05/pagination-post">Pagination Post</a>
+				<a href="https://nice01qc.github.io/2017-03-05/pagination-post"> 1</a>
+				<p>Here we see <strong>Tale’s</strong> pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the <code class="highlighter-rouge">_config.yml</code> file!</p>
+
+			</li>		
+	</ul>
+
+    <div style="position:absolute;bottom:0;width:100%;height:30px;background:white">
       <span style="display:block;text-align:center;font-size:13px;">
         &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll. homepage <a href="https://nice01qc.github.io/">nice01qc</a> theme.
       </span>
     </div>
+
+    <script type="text/javascript">
+  		alert("wo do di ygie javascript");
+  	</script>
   </body>
 </html>
