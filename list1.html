@@ -23,26 +23,25 @@ title: List
     </div>
 	</nav>
 
-
     <main>
-          <div>
 		<ul>
 			{% for post in site.posts %}
 			<li>
-				<span>{{ post.url }}</span>
-				<span>{{ post.title }}</span>
-				<span>{{ post.categories }}</span>
+				<span>{{ post.url }}---</span>
+				<span>{{ post.title }}----</span>
+				<span>{{ post.categories }}----</span>
 				<span>{{ post.date }}</span>
 			</li>
 			{% endfor %}
 		</ul>
-	</div>
-    </main>
+	</main>
 
-    <footer style="bottom:1px;width:100%;">
-      <span>
-        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll. homepage <a href="https://nice01qc.github.io/">nice01qc</a> theme.
-      </span>
-    </footer>
+    <footer style="position:absolute;bottom:0;width:100%;">
+	
+		<span style="display:block;text-align:center;">
+			© 2018 Jinhao Li. Made with Jekyll. homepage nice01qc theme.
+		</span>
+	</footer>
+	
   </body>
 </html>
