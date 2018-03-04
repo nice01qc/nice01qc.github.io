@@ -28,6 +28,8 @@ title: List
 			{% for post in site.posts %}
 			<li>
 				<a href="{{ post.url }}">{{ post.title }}</a>
+				<a href="{{ post.url }}">{{ post.tag }} 1</a>
+				{{ post.excerpt }}
 			</li>
 			{% endfor %}
 		</ul>
