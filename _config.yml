@@ -1,7 +1,6 @@
 # Site settings
 title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
+description:    "Minimal Jekyll theme"
 url:            "https://nice01qc.github.io"
 
 # Author
@@ -24,4 +23,4 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       5
+paginate:       8
