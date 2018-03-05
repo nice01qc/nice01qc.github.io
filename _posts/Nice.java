@@ -8,7 +8,7 @@ public class Nice {
         String listFileName =director.getAbsolutePath() +"\\" + "transformlist.txt";
         List<String> list = new ArrayList<String>();
         getlist(list,listFileName);
-        
+
         for (String x : list) {
             if (!x.contains(".md")){
                 x = x + ".md";
@@ -60,10 +60,10 @@ public class Nice {
             e.printStackTrace();
         }
 
-        BufferedWriter bufferedWriter = null;
+        OutputStreamWriter bufferedWriter = null;
 
         try{
-            bufferedWriter = new BufferedWriter(new FileWriter(file));
+            bufferedWriter = new OutputStreamWriter(new FileOutputStream(file),"UTF-8");
             bufferedWriter.write(filestr.toString());
             bufferedWriter.flush();
             bufferedWriter.close();
