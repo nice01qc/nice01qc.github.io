@@ -23,4 +23,4 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       8
+paginate:       5
