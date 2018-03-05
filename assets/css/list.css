@@ -1,0 +1,23 @@
+#result {
+	color: black;
+	background: white;
+	font-family: Sans-serif,"Times New Roman";
+
+}
+#result li{
+	height: 25px;
+	list-style:none;
+	margin: 8px 0;
+	background: 	#F0F0F0;
+	padding: 5px;
+}
+#result a{
+	 text-decoration:none;
+	 font-size: 16px;
+}
+#result a:hover{
+	display: inline-block;
+	position: absolute;
+	font-size: 18px;
+	font-weight: bold;
+}
