@@ -7,7 +7,7 @@ title: Share
 <html lang="en">
 
   {% include head.html %}
-
+  <link rel="stylesheet" href="{{ "/assets/css/picture.css" | relative_url }}">
   <body>
     <nav class="nav">
       <div class="nav-container">
@@ -24,22 +24,32 @@ title: Share
 	</nav>
 
 
-
-
-
-
-
 	<main>
 		<div id = "share">
 			
+		    <div id="wrap1">
+			    <div id="wrap2">
+			        <ul id="picture">
+			          <li><img src="{{ "/assets/sharepicture/1.jpg" | relative_url }}" /></li>
+			          <li><img src="{{ "/assets/sharepicture/2.jpg" | relative_url }}" /></li>
+			          <li><img src="{{ "/assets/sharepicture/3.jpg" | relative_url }}" /></li>
+			          <li><img src="{{ "/assets/sharepicture/4.jpg" | relative_url }}" /></li>
+			          <li><img src="{{ "/assets/sharepicture/5.jpg" | relative_url }}" /></li>
+			          <li><img src="{{ "/assets/sharepicture/6.jpg" | relative_url }}" /></li>
+			        </ul>
+			        <ul id="num">
+			          <li>1</li>
+			          <li>2</li>
+			          <li>3</li>
+			          <li>4</li>
+			          <li>5</li>
+			          <li>6</li>
+			        </ul>
+			    </div>
+		    </div>
 		</div>
 	</main>
 	
-
-
-
-
-
 
     <div class="pagination">
 		<a href="#" class="top">Top</a>
@@ -49,6 +59,6 @@ title: Share
 			&copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll theme. homepage <a href="https://nice01qc.github.io/">nice01qc</a>.
 		</span>
 	</footer>
-	<script type="text/javascript" src="{{ "/assets/js/list.js" | relative_url }}" ></script>
+	<script type="text/javascript" src="{{ "/assets/js/picture.js" | relative_url }}" ></script>
   </body>
 </html>
