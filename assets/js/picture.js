@@ -4,7 +4,7 @@ var numli=document.getElementById('num').getElementsByTagName('li');
 var pictureli=picture.getElementsByTagName('li');
 var imgarr=new Array;
 for(var i=0;i<pictureli.length;i++){
-  imgarr.push(pictureli[i].offsetTop+30;
+  imgarr.push(pictureli[i].offsetTop+30);
 }
 for(var i=0;i<numli.length;i++){
   numli[i].index=i;
