@@ -30,12 +30,12 @@ title: Share
 		    <div id="wrap1">
 			    <div id="wrap2">
 			        <ul id="picture">
-			          <li><img src="{{ "/assets/sharepicture/1.jpg" | relative_url }}" /></li>
-			          <li><img src="{{ "/assets/sharepicture/2.jpg" | relative_url }}" /></li>
-			          <li><img src="{{ "/assets/sharepicture/3.jpg" | relative_url }}" /></li>
-			          <li><img src="{{ "/assets/sharepicture/4.jpg" | relative_url }}" /></li>
-			          <li><img src="{{ "/assets/sharepicture/5.jpg" | relative_url }}" /></li>
-			          <li><img src="{{ "/assets/sharepicture/6.jpg" | relative_url }}" /></li>
+			          <li><img src="{{ '/assets/sharepicture/1.jpg' | relative_url }}" /></li>
+			          <li><img src="{{ '/assets/sharepicture/2.jpg' | relative_url }}" /></li>
+			          <li><img src="{{ '/assets/sharepicture/3.jpg' | relative_url }}" /></li>
+			          <li><img src="{{ '/assets/sharepicture/4.jpg' | relative_url }}" /></li>
+			          <li><img src="{{ '/assets/sharepicture/5.jpg' | relative_url }}" /></li>
+			          <li><img src="{{ '/assets/sharepicture/6.jpg' | relative_url }}" /></li>
 			        </ul>
 			        <ul id="num">
 			          <li>1</li>
@@ -54,7 +54,18 @@ title: Share
     <div class="pagination">
 		<a href="#" class="top">Top</a>
 	</div>
-	    <footer>
+
+	<div id="contact">
+		<div id="contact-wrap">
+			<a href="#"><img src="{{ '/assets/qq.png' | relative_url }}" /></a>
+			<a href="https://github.com/nice01qc"><img src="{{ '/assets/github.png' | relative_url }}" /></a>
+			<a href="#"><img src="{{ '/assets/weibo.png' | relative_url }}" /></a>
+			<a href="#"><img src="{{ '/assets/email.png' | relative_url }}" /></a>
+		</div>
+	</div>
+
+
+	<footer>
 		<span>
 			&copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll theme. homepage <a href="https://nice01qc.github.io/">nice01qc</a>.
 		</span>
