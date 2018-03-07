@@ -14,13 +14,32 @@ for (var i = 0; i < lis.length; i++) {
 	} 			
 }
 
-var resultdiv = document.getElementById("result");
+var resultdiv = document.getElementById("result");		// 获取result 节点
 // alert(finallyresult);
 
 
 for (var x of categories){
 	finallyset(resultdiv,lis,x);
 }
+
+var tagsdiv = document.getElementById("tags");			// 获取tags节点
+settags(tagsdiv,categories);
+
+
+// 把tags 全部添加到point中去
+function settags(point,tags){
+	for (var cateName of tags){
+		var a = document.createElement("a");
+		var hrefName = "#"+cateName;
+		a.setAttribute("href",hrefName);
+		a.setAttribute("style","margin: 6px 10px;display: inline-block;border-radius: 10px;font-family: sans-serif;color: #333333;background: #979797;padding: 3px 10px;text-decoration:none;");
+		var node=document.createTextNode(cateName);
+		a.appendChild(node);
+		point.appendChild(a);
+	}
+
+}
+
 
 // 给定目标节点，把一个分好的类加进去
 function finallyset(point,lis,cateName){
@@ -36,8 +55,10 @@ function finallyset(point,lis,cateName){
 	createpointdiv(div,newlist,cateName);
 	point.appendChild(div);
 }
-// 给一个div节点，然后把cateName分类加进去
+// 给一个div节点，然后把一个cateName分类加进去
 function createpointdiv(pointdiv,newlist,cateName){
+	var a = document.createElement("a");
+	a.setAttribute("name",cateName);
 	var h3=document.createElement("h3");
 	var node=document.createTextNode(cateName);
 	h3.appendChild(node);
@@ -47,11 +68,12 @@ function createpointdiv(pointdiv,newlist,cateName){
 		var title = getlivalue(lis,1);
 		var date = getlivalue(lis,3).substring(0,10);
 		var li=document.createElement("li");
-		str = "\<a href=\'" + url + "\'\>" + title + "\<\/a>" +
+		str = "\<a " + " href=\'" + url + "\'\>" + title + "\<\/a>" +
 		"<span style=\'float:right;\'>" + date + "<\/span>";
 		li.innerHTML = str;
 		ul.appendChild(li);
 	}
+	pointdiv.appendChild(a);
 	pointdiv.appendChild(h3);
 	pointdiv.appendChild(ul);
 }
