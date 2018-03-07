@@ -1,5 +1,5 @@
 
-sleep(2000);
+sleep(3000);
 
 var picture=document.getElementById('picture');
 var numli=document.getElementById('num').getElementsByTagName('li');
