@@ -32,7 +32,7 @@ function settags(point,tags){
 		var a = document.createElement("a");
 		var hrefName = "#"+cateName;
 		a.setAttribute("href",hrefName);
-		a.setAttribute("style","margin: 6px 10px;display: inline-block;border-radius: 10px;font-family: sans-serif;color: #333333;background: #979797;padding: 3px 10px;text-decoration:none;");
+		a.setAttribute("style","margin: 6px 10px;display: inline-block;border-radius: 10px;font-family: sans-serif;color: #333333;background: #e5e5e5;padding: 3px 10px;text-decoration:none;");
 		var node=document.createTextNode(cateName);
 		a.appendChild(node);
 		point.appendChild(a);
