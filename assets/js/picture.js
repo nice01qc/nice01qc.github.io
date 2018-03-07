@@ -1,3 +1,6 @@
+
+sleep(2000);
+
 var picture=document.getElementById('picture');
 var numli=document.getElementById('num').getElementsByTagName('li');
   var timeout=timeout1=null;
@@ -77,4 +80,15 @@ timeout=setInterval(function(){
     picture.style.top=x+"px";
     if(x==height){clearInterval(timeout);}
 },2);
+}
+
+// 暂停几秒
+function sleep(numberMillis) { 
+	var now = new Date(); 
+	var exitTime = now.getTime() + numberMillis; 
+	while (true) { 
+	now = new Date(); 
+	if (now.getTime() > exitTime) 
+		return; 		
+	} 
 }
