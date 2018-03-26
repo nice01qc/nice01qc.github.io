@@ -1,11 +1,11 @@
 # Site settings
-title:          Jinhao Li Blog
+title:          Li Jinhao Blog
 description:    "Minimal Jekyll theme"
 url:            "https://nice01qc.github.io"
 
 # Author
 author:
-  name:         Jinhao Li
+  name:         Li Jinhao 
   url:          https://nice01qc.github.io
   email:        734522310@qq.com
 
@@ -23,4 +23,4 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       5
+paginate:       8
