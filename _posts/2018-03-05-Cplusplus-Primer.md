@@ -2,7 +2,7 @@
 layout: post
 title: "C++ prime总结"
 author: "nice01qc"
-categorie: "C plusplus"
+categories: "C plusplus"
 excerpt_separator: "..."
 ---
 
