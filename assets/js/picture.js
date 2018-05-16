@@ -26,8 +26,6 @@ window.onload = function(){
 	  };
 	}
 	turns(1);
-}
-
 
 function turns(index){
   var number=index;
@@ -94,3 +92,10 @@ function sleep(numberMillis) {
 		return; 		
 	} 
 }
+
+
+
+	
+}
+
+
