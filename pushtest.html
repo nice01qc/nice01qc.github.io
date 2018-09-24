@@ -1,0 +1,57 @@
+---
+layout: Share
+title: Share
+---
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>message</title>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<link href="{{ "/assets/css/pushtest/webSock.css" | relative_url }}" rel="stylesheet" type="text/css"/>
+		<link rel="shortcut icon" href="{{ "/assets/img/index.ico" | relative_url }}">
+		<script src="{{ "/assets/js/pushtest/para.js" | relative_url }}" ></script>
+	</head>
+  
+  <body>
+
+	<div id="showbigimg"></div>
+	<header>
+			<span>
+				与插件通信：<input type="text=" id="headinput" value="">
+				<button id="headtijiao">提交</button>
+			</span>
+		<span>输入房间号：</span><input id="room" type="text"/>
+		<button onclick="sendRoom()">确定</button>
+		<button onclick="closeWebSocket()">关闭连接</button>
+		<span id="imgNum"></span><span id="TextNum"></span>
+		<span style="display: inline-block;border-radius: 30px;margin-left: 50px;" id="showshow">111</span>
+	</header>
+
+
+	<div id="content">
+		<h5>message</h5>
+		<h5>img</h5>
+		<h1 id="progressBar"></h1>
+		<div id="textArea">
+			<div id="message" style="overflow:scroll; width:300px; height: 1000px;">
+				<div id="firstdiv">以下消息双击可以删除,图片也可以</div>
+			</div>
+		</div>
+		<div id="imgArea" style="overflow:scroll; width:705px; height: 1000px;"></div>
+	</div>
+
+	<script src="{{ "/assets/js/pushtest/webSock.js" | relative_url }}"></script>
+	
+  
+  
+  
+
+	<footer>
+		<span>
+			&copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll theme. homepage <a href="https://nice01qc.github.io/">nice01qc</a>.
+		</span>
+	</footer>
+	<script type="text/javascript" src="{{ "/assets/js/picture.js" | relative_url }}" ></script>
+  </body>
+</html>
